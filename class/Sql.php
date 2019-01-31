@@ -7,6 +7,7 @@ class Sql extends PDO{
 	public function __construct(){
 
 		$this->conn = new PDO("mysql:dbname=dbcurso;host=192.168.14.224", "usr_teste", "1234");
+		//$result = $mysql->query('DELIMITER $$');
 	}
 
 	private function setParams($statement, $parameters = array()){

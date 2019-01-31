@@ -27,6 +27,25 @@ echo json_encode($search);
 */
 
 //Autentica usuarios
-$usuario = new Usuario();
+/*$usuario = new Usuario();
 $usuario->login("camila", "12315");
 echo $usuario;
+*/
+
+//Inseririndo novo usuario
+/*$aluno = new Usuario("eduardo", "5555");
+
+$aluno->insert();
+
+echo $aluno;
+*/
+
+$usuario = new Usuario();
+
+$usuario->loadById(8);
+
+$usuario->update("professor", "hfhfhhf");
+
+echo $usuario;
+
+
